@@ -69,7 +69,8 @@ int main(int argc, char** argv)
         }
 
         ResultStruct result = fibClient.calculateFibonacci(input);
-        std::cout << "For payload: " << input << ", fibonacci = " << result.fibonacciResult << ", timeStamp = " << result.timeStamp << ", duration = " << result.duration << ", count = " << result.count << std::endl;
+        std::cout << "For payload: " << input << ", { fibonacci = " << result.fibonacciResult << ", timeStamp = " << result.timeStamp << ", duration = " << result.duration << ", count = " << result.count << " }" << std::endl;
+        std::cout << std::endl;
     }
 
     return 0;
