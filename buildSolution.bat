@@ -1,0 +1,1 @@
+cmake -B "C:\homeAss\task\build" -S . "-DCMAKE_TOOLCHAIN_FILE=C:/homeAss/vcpkg/vcpkg/scripts/buildsystems/vcpkg.cmake"

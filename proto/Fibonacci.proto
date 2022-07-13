@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package fibonacci;
+
+// The fibonacci service definition.
+service Fibonacci {
+
+  rpc calculateFibonacci (FibonacciRequest) returns (FibonacciReply) {}
+}
+
+// The request message containing the number.
+message FibonacciRequest {
+  int32 payload = 1;
+}
+
+// The response message containing the fibonacci result
+message FibonacciReply {
+  int64 fib = 1;
+  int64 timestamp = 2;
+  int64 duration = 3;
+  int32 count = 4;
+  int64 testP = 5;
+}
